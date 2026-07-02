@@ -49,9 +49,15 @@ const Home = () => {
     <div className="w-full overflow-hidden text-gray-800">
       <section
         className="relative lg:min-h-[90vh] min-h-[89vh] bg-cover bg-center flex items-center px-4 sm:px-6 md:px-10"
-        style={{ backgroundImage: `url(${assets.auto})` }}
+        style={{ backgroundImage: `url(${assets.Rosco})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-rosco2 to-transparent"></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(5,22,49,0.95) 0%, rgba(5,22,49,0.88) 35%, rgba(5,22,49,0.55) 60%, rgba(5,22,49,0.15) 80%, transparent 100%)",
+          }}
+        ></div>
 
         <div className="relative max-w-5xl mx-auto text-white w-full text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
@@ -74,47 +80,57 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-[#0b1c3d] text-white py-16 px-4 sm:px-6 md:px-12">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-1 lg:grid-cols-2 gap-10  items-center">
-          <div className="relative">
-            <div className="rounded-3xl overflow-hidden bg-black">
+      <section className="bg-[#0b1c3d] text-white py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+          <div className="relative group">
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl border border-white/10">
               <img
-                src={assets.engine1}
-                alt="Engine"
-                className="w-full object-contain"
+                src={assets.Workers}
+                alt="Rosco Autotech Engineers"
+                className="w-full h-[520px] object-cover transition-transform duration-700 group-hover:scale-105"
               />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0b1c3d]/70 via-transparent to-transparent"></div>
             </div>
 
-            <div className="absolute bottom-[-30px] left-4 sm:left-6 bg-[#1e2f52] rounded-2xl px-5 sm:px-8 py-4 sm:py-6 shadow-xl">
-              <h2 className="text-2xl sm:text-3xl font-bold">100%</h2>
-              <p className="text-sm sm:text-base font-bold text-gray-300 mt-1">
+            <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-8 py-6 shadow-2xl">
+              <h2 className="text-4xl font-bold text-pryClr">100%</h2>
+
+              <p className="text-gray-200 font-medium mt-2 leading-relaxed">
                 Accuracy in Digital Diagnostics
               </p>
             </div>
           </div>
 
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl md:text-center md:mt-20 font-bold mb-6">
+            {/* <div className="w-16 h-1 bg-pryClr rounded-full mb-6"></div> */}
+
+            <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
               The Rosco Standard
             </h2>
 
-            <p className="leading-relaxed mb-6 text-sm sm:text-base font-semibold md:text-center">
+            <p className="text-gray-300 text-lg leading-7 mb-10 ">
               Founded on the principles of aerospace-grade precision, Rosco
-              Autotech redefines the service experience.
+              Autotech delivers exceptional automotive diagnostics, expert
+              repairs, and customer-focused service. Every vehicle entrusted to
+              us is handled with advanced technology, certified expertise, and
+              an unwavering commitment to quality.
             </p>
 
-            <div className="flex flex-wrap gap-3 md:justify-center">
-              <span className="bg-[#162544] px-4 py-2 rounded-full text-xs sm:text-sm flex items-center gap-2 md:text-lg md:p-2 lg:p-2">
-                <MdOutlineVerified className="text-pryClr" />
-                EXPERIENCE
+            <div className="flex  gap-4">
+              <span className="flex items-center gap-3 bg-white/5 border border-white/10 px-6 py-3 rounded-full hover:text-white transition duration-300">
+                <MdOutlineVerified className="text-pryClr text-xl" />
+                <span className="font-semibold tracking-wide">EXPERIENCE</span>
               </span>
-              <span className="bg-[#162544] px-4 py-2 rounded-full text-xs sm:text-sm flex items-center gap-2 md:text-lg md:p-2 lg:p-2">
-                <GiStarMedal className="text-pryClr" />
-                CERTIFIED
+
+              <span className="flex items-center gap-3 bg-white/5 border border-white/10 px-6 py-3 rounded-full hover:text-white transition duration-300">
+                <GiStarMedal className="text-pryClr text-xl" />
+                <span className="font-semibold tracking-wide">CERTIFIED</span>
               </span>
-              <span className="bg-[#162544] px-4 py-2 rounded-full text-xs sm:text-sm flex items-center gap-2 md:text-lg md:p-2 lg:p-2">
-                <FaHandshake className="text-pryClr" />
-                TRUSTED
+
+              <span className="flex items-center gap-3 bg-white/5 border border-white/10 px-6 py-3 rounded-full  hover:text-white transition duration-300">
+                <FaHandshake className="text-pryClr text-xl" />
+                <span className="font-semibold tracking-wide">TRUSTED</span>
               </span>
             </div>
           </div>
@@ -165,8 +181,10 @@ const Home = () => {
             ].map((service, index) => (
               <div
                 key={index}
-                className="bg-[#171F33] p-6 rounded-2xl hover:shadow-lg transition hover:scale-105  duration-300"
+                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0b1c3d] backdrop-blur-md p-6 transition-all duration-500 hover:-translate-y-3 hover:border-pryClr/50 hover:shadow-[0_20px_50px_rgba(0,0,0,0.35)]"
               >
+                <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-pryClr via-white to-transparent scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
+
                 <div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-pryClr text-white">
                   {service.icon}
                 </div>
@@ -203,13 +221,28 @@ const Home = () => {
       </section>
 
       <section className="bg-[#131B2E] py-16 px-4 sm:px-6 md:px-12 text-white">
+        <div className="text-center mb-14">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+            Our Impact in Numbers
+          </h2>
+          <p className="text-gray-400 mt-3 max-w-2xl mx-auto">
+            Delivering trusted automotive engineering services with measurable
+            results and customer satisfaction.
+          </p>
+        </div>
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           {stats.map((item, index) => (
-            <div key={index}>
-              <h2 className="text-3xl sm:text-4xl font-bold text-pryClr">
+            <div
+              key={index}
+              className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 text-center transition-all duration-500 hover:border-pryClr hover:-translate-y-2 "
+            >
+              <h2 className="text-4xl md:text-5xl font-extrabold text-pryClr mb-3">
                 {item.number}
               </h2>
-              <p className="mt-2 text-sm sm:text-base capitalize">
+
+              <div className="w-12 h-1 bg-pryClr rounded-full mx-auto mb-4 group-hover:w-20 transition-all duration-300"></div>
+
+              <p className="text-gray-300 text-base font-medium capitalize">
                 {item.label}
               </p>
             </div>

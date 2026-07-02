@@ -10,7 +10,7 @@ import { FaShield } from "react-icons/fa6";
 import { MdOutlineTerminal } from "react-icons/md";
 
 const Card = ({ icon, title, text }) => (
-  <div className="bg-[#111c2e] flex flex-col justify-center items-center p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+  <div className="bg-[#111c2e] flex flex-col justify-center items-center p-6 rounded-2xl shadow-md hover:shadow-xl border border-white/10 transition duration-300 hover:border-pryClr hover:-translate-y-2">
     <div className="text-pryClr text-5xl mb-4 ">{icon}</div>
     <h3 className="text-white text-[20px] font-semibold mb-2">{title}</h3>
     <p className="text-white text-center text-sm leading-relaxed">{text}</p>
@@ -36,7 +36,7 @@ const About = () => {
     <div className="bg-white">
       <section
         className="relative h-[400px] bg-cover bg-center bg-no-repeat text-white py-20 text-center px-6"
-        style={{ backgroundImage: `url(${assets.auto})` }}
+        style={{ backgroundImage: `url(${assets.About})` }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
 
@@ -55,7 +55,7 @@ const About = () => {
         <div className="relative px-6 md:px-16 mx-auto py-6 grid md:grid-cols-1 lg:grid-cols-2   gap-12 items-center">
           <div>
             <img
-              src={assets.man}
+              src={assets.image}
               alt="Mechanic"
               className="w-full h-120 object-cover rounded-2xl"
             />
@@ -100,7 +100,7 @@ const About = () => {
           Our Core Philosophy
         </h2>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 ">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
           <Card
             icon={<FaScrewdriverWrench />}
             title="Uncompromising Precision"
@@ -214,11 +214,13 @@ const About = () => {
           </p>
         </div>
 
-        <img
-          src={assets.man}
-          alt="Mechanic"
-          className="w-full h-120 object-cover"
-        />
+        <div className=" overflow-hidden">
+          <img
+            src={assets.who}
+            alt="Mechanic"
+            className="w-full h-[420px] md:h-[500px] lg:h-[540px] rounded-2xl object-cover"
+          />
+        </div>
       </section>
     </div>
   );

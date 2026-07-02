@@ -20,7 +20,7 @@ const Service = () => {
     <div className="text-white">
       <section
         className="relative h-[400px] bg-cover bg-center bg-no-repeat py-20 text-center px-6"
-        style={{ backgroundImage: `url(${assets.auto})` }}
+        style={{ backgroundImage: `url(${assets.service})` }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
 
@@ -84,9 +84,9 @@ const Service = () => {
 
       <section
         className="relative py-24 px-6 md:px-16 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${assets.auto})` }}
+        style={{ backgroundImage: `url(${assets.Chosse})` }}
       >
-        <div className="absolute inset-0 bg-[#131b2ec4] backdrop-blur-sm"></div>
+        <div className="absolute inset-0  backdrop-blur-sm"></div>
 
         <div className="relative max-w-6xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-14 tracking-tight">
@@ -94,7 +94,7 @@ const Service = () => {
           </h2>
 
           <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-10">
-            <div className="bg-white/10 border border-white/20 backdrop-blur-lg p-8 rounded-3xl shadow-lg hover:scale-105 hover:bg-white/20 transition duration-300">
+            <div className="bg-white/ border border-white/20 backdrop-blur-lg p-8 rounded-3xl shadow-lg hover:scale-105 hover:bg-white/20 transition duration-300">
               <h3 className="text-xl font-bold mb-3">Experienced Team</h3>
               <p className="text-sm text-gray-200">
                 Skilled mechanics with deep knowledge of all vehicle types,
@@ -102,7 +102,7 @@ const Service = () => {
               </p>
             </div>
 
-            <div className="bg-white/10 border border-white/20 backdrop-blur-lg p-8 rounded-3xl shadow-lg hover:scale-105 hover:bg-white/20 transition duration-300">
+            <div className="bg-white/ border border-white/20 backdrop-blur-lg p-8 rounded-3xl shadow-lg hover:scale-105 hover:bg-white/20 transition duration-300">
               <h3 className="text-xl font-bold mb-3">Quality Service</h3>
               <p className="text-sm text-gray-200">
                 We use advanced tools and proven techniques to deliver
@@ -110,7 +110,7 @@ const Service = () => {
               </p>
             </div>
 
-            <div className="bg-white/10 border border-white/20 backdrop-blur-lg p-8 rounded-3xl shadow-lg hover:scale-105 hover:bg-white/20 transition duration-300">
+            <div className="bg-white/  border border-white/20 backdrop-blur-lg p-8 rounded-3xl shadow-lg hover:scale-105 hover:bg-white/20 transition duration-300">
               <h3 className="text-xl font-bold mb-3">Customer Satisfaction</h3>
               <p className="text-sm text-gray-200">
                 Your satisfaction is our priority — we provide honest service

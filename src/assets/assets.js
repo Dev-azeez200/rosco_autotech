@@ -1,21 +1,25 @@
 import RoscoLogo1 from "./RoscoLogo1.png";
-import auto from "./auto.jpg";
-import engine from "./engine.jpg";
-import yoo from "./yoo.jpg"
-import man from "./man.jpg"
-import engine1 from "./engine1.jpg";
 import engineWork from "./engineWork.jpg";
 import inte from "./inte.jpg";
+import Rosco from "./Rosco.png";
+import Workers from "./Workers.png";
+import image from "./image.png";
+import About from "./About.png";
+import who from "./who.png"
+import service from "./service.png"
+import Chosse from "./Chosse.png";
 
 const assets = {
+  About,
+  image,
+  Workers,
+  Rosco,
   RoscoLogo1,
-  auto,
-  engine,
-  yoo,
-  man,
-  engine1,
   engineWork,
   inte,
+  who,
+  service,
+  Chosse,
 };
 
 export default assets;
