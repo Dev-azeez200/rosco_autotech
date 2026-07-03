@@ -58,7 +58,6 @@ const Footer = () => {
 
       <div className="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between text-xs text-gray-500">
         <p>© 2026 ROSCO AUTOTECH. Precision Engineering.</p>
-        <p className="mt-2 md:mt-0">Designed for Performance</p>
       </div>
     </footer>
   );
