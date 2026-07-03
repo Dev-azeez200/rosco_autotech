@@ -80,36 +80,38 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-[#0b1c3d] text-white py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="bg-[#0b1c3d] text-white py-14 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          {/* Image */}
           <div className="relative group">
             <div className="relative overflow-hidden rounded-3xl shadow-2xl border border-white/10">
               <img
                 src={assets.Workers}
                 alt="Rosco Autotech Engineers"
-                className="w-full h-[520px] object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-[320px] sm:h-[420px] lg:h-[520px] object-cover transition-transform duration-700 group-hover:scale-105"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-[#0b1c3d]/70 via-transparent to-transparent"></div>
             </div>
 
-            <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-8 py-6 shadow-2xl">
-              <h2 className="text-4xl font-bold text-pryClr">100%</h2>
+            {/* Floating Card */}
+            <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-5 py-4 sm:px-8 sm:py-6 shadow-2xl">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-pryClr">
+                100%
+              </h2>
 
-              <p className="text-gray-200 font-medium mt-2 leading-relaxed">
+              <p className="text-gray-200 text-sm sm:text-base font-medium mt-1 sm:mt-2 leading-relaxed">
                 Accuracy in Digital Diagnostics
               </p>
             </div>
           </div>
 
-          <div>
-            {/* <div className="w-16 h-1 bg-pryClr rounded-full mb-6"></div> */}
-
-            <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
+          <div className="text-center lg:text-left">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-5 sm:mb-6">
               The Rosco Standard
             </h2>
 
-            <p className="text-gray-300 text-lg leading-7 mb-10 ">
+            <p className="text-gray-300 text-base sm:text-lg leading-7 mb-8 sm:mb-10 max-w-2xl mx-auto lg:mx-0">
               Founded on the principles of aerospace-grade precision, Rosco
               Autotech delivers exceptional automotive diagnostics, expert
               repairs, and customer-focused service. Every vehicle entrusted to
@@ -117,20 +119,26 @@ const Home = () => {
               an unwavering commitment to quality.
             </p>
 
-            <div className="flex  gap-4">
-              <span className="flex items-center gap-3 bg-white/5 border border-white/10 px-6 py-3 rounded-full hover:text-white transition duration-300">
-                <MdOutlineVerified className="text-pryClr text-xl" />
-                <span className="font-semibold tracking-wide">EXPERIENCE</span>
+            <div className="flex flex-wrap lg:flex justify-center  gap-3 sm:gap-4">
+              <span className="flex items-center gap-2 sm:gap-3 bg-white/5 border border-white/10 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full hover:text-white transition duration-300">
+                <MdOutlineVerified className="text-pryClr text-lg sm:text-xl" />
+                <span className="font-semibold text-sm sm:text-base tracking-wide">
+                  EXPERIENCE
+                </span>
               </span>
 
-              <span className="flex items-center gap-3 bg-white/5 border border-white/10 px-6 py-3 rounded-full hover:text-white transition duration-300">
-                <GiStarMedal className="text-pryClr text-xl" />
-                <span className="font-semibold tracking-wide">CERTIFIED</span>
+              <span className="flex items-center gap-2 sm:gap-3 bg-white/5 border border-white/10 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full hover:text-white transition duration-300">
+                <GiStarMedal className="text-pryClr text-lg sm:text-xl" />
+                <span className="font-semibold text-sm sm:text-base tracking-wide">
+                  CERTIFIED
+                </span>
               </span>
 
-              <span className="flex items-center gap-3 bg-white/5 border border-white/10 px-6 py-3 rounded-full  hover:text-white transition duration-300">
-                <FaHandshake className="text-pryClr text-xl" />
-                <span className="font-semibold tracking-wide">TRUSTED</span>
+              <span className="flex items-center gap-2 sm:gap-3 bg-white/5 border border-white/10 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full hover:text-white transition duration-300">
+                <FaHandshake className="text-pryClr text-lg sm:text-xl" />
+                <span className="font-semibold text-sm sm:text-base tracking-wide">
+                  TRUSTED
+                </span>
               </span>
             </div>
           </div>

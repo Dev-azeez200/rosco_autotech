@@ -51,7 +51,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="relative bg-[#131B2E] text-white py-16">
+      <section className="relative bg-[#0b1c3d] text-white py-16">
         <div className="relative px-6 md:px-16 mx-auto py-6 grid md:grid-cols-1 lg:grid-cols-2   gap-12 items-center">
           <div>
             <img
@@ -95,7 +95,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="bg-[#0b1424] text-white p-6  py-16 md:px-12">
+      <section className="bg-[#131B2E] text-white p-6  py-16 md:px-12">
         <h2 className="text-4xl font-bold text-center mb-12">
           Our Core Philosophy
         </h2>
@@ -122,7 +122,7 @@ const About = () => {
       <section className="bg-[#131B2E] text-white py-16 px-6 md:px-12">
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-8 lg:text-center">
+            <h2 className="text-3xl font-bold mb-8 lg:text-center md:text-center">
               The Rosco Standard
             </h2>
 
@@ -198,7 +198,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-16  bg-[#0b1424] p-6 lg:px-16 shadow grid md:grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <section className="py-16  bg-[#0b1c3d] p-6 lg:px-16 shadow grid md:grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div>
           <h2 className="text-4xl text-white text-center font-bold mb-8">
             Who We Are
@@ -218,7 +218,7 @@ const About = () => {
           <img
             src={assets.who}
             alt="Mechanic"
-            className="w-full h-[420px] md:h-[500px] lg:h-[540px] rounded-2xl object-cover"
+            className="w-full h-[420px] md:h-[700px] lg:h-[540px] rounded-2xl object-cover"
           />
         </div>
       </section>
