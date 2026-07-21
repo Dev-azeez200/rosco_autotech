@@ -51,15 +51,9 @@ const Home = () => {
         className="relative lg:min-h-[90vh] min-h-[89vh] bg-cover bg-center flex items-center px-4 sm:px-6 md:px-10"
         style={{ backgroundImage: `url(${assets.Rosco})` }}
       >
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(90deg, rgba(5,22,49,0.95) 0%, rgba(5,22,49,0.88) 35%, rgba(5,22,49,0.55) 60%, rgba(5,22,49,0.15) 80%, transparent 100%)",
-          }}
-        ></div>
+        <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/40"></div>
 
-        <div className="relative max-w-5xl mx-auto text-white w-full text-center">
+        <div className="relative z-10 max-w-5xl mx-auto text-white w-full text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             Rosco Autotech Reliable Auto Repairs Anytime, Anywhere.
           </h2>
@@ -71,7 +65,7 @@ const Home = () => {
 
           <div className="mt-6">
             <Link
-              to={"/BookService"}
+              to="/BookService"
               className="px-6 sm:px-8 py-3 bg-pryClr text-white rounded-lg font-semibold shadow"
             >
               Book Service
