@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
+import Select from "react-select";
 
 const BookingForm = () => {
   const [selectedTime, setSelectedTime] = useState("");
@@ -135,6 +137,13 @@ ${result.recommendation}
 
   return (
     <div className="min-h-screen bg-linear-to-br from-[#0b1424] to-[#0f1f3d] p-6 text-white">
+      <Helmet>
+        <title>Book Service | ROSCO AUTOTECH</title>
+        <meta
+          name="description"
+          content="Book a service with ROSCO AUTOTECH for diagnostics, repairs, key programming, and mobile mechanic appointments. Fast scheduling and expert care."
+        />
+      </Helmet>
       <button
         onClick={() => navigate("/")}
         className="flex items-center gap-2 mb-6 text-gray-300 hover:text-white transition"
@@ -151,36 +160,74 @@ ${result.recommendation}
           <div>
             <h2 className="text-xl font-semibold mb-6">Service Details</h2>
 
-            <div className="mb-5">
-              <label className="text-sm text-gray-400">Select Service</label>
-
+            <div className="relative mt-2">
               <select
                 name="service"
                 onChange={formik.handleChange}
                 value={formik.values.service}
-                className="w-full mt-2 p-3 rounded-xl bg-[#0b1424] border border-white/10 outline-none"
+                // options={services}
+                // maxMenuHeight={200}
+                className="
+                  w-full
+                  rounded-2xl
+                  bg-slate-900/80
+                  p-4
+                  text-white
+                  overflow-y-auto
+                  outline-none
+                  "
               >
-                <option>Full System Diagnostics</option>
-                <option>Engine Repair</option>
-                <option>Oil Change</option>
-                <option>Brake System Repair</option>
-                <option>Battery Replacement</option>
-                <option>Transmission Repair</option>
-                <option>Suspension Repair</option>
-                <option>Wheel Alignment</option>
-                <option>AC Repair & Servicing</option>
-                <option>Electrical System Repair</option>
-                <option>Tyre Replacement</option>
-                <option>Car Inspection</option>
-                <option>Fuel System Repair</option>
-                <option>Radiator & Cooling System Repair</option>
-                <option>Check Engine Light Diagnosis</option>
-                <option>Vehicle Maintenance Service</option>
-                <option>Emergency Roadside Assistance</option>
+                <option value="Full System Diagnostics">
+                  Full System Diagnostics
+                </option>
+                <option value="Engine Repair">Engine Repair</option>
+                <option value="Oil Change">Oil Change</option>
+                <option value="Brake System Repair">Brake System Repair</option>
+                <option value="Battery Replacement">Battery Replacement</option>
+                <option value="Transmission Repair">Transmission Repair</option>
+                <option value="Suspension Repair">Suspension Repair</option>
+                <option value="Wheel Alignment">Wheel Alignment</option>
+                <option value="AC Repair & Servicing">
+                  AC Repair & Servicing
+                </option>
+                <option value="Electrical System Repair">
+                  Electrical System Repair
+                </option>
+                <option value="Tyre Replacement">Tyre Replacement</option>
+                <option value="Car Inspection">Car Inspection</option>
+                <option value="Fuel System Repair">Fuel System Repair</option>
+                <option value="Radiator & Cooling System Repair">
+                  Radiator & Cooling System Repair
+                </option>
+                <option value="Check Engine Light Diagnosis">
+                  Check Engine Light Diagnosis
+                </option>
+                <option value="Vehicle Maintenance Service">
+                  Vehicle Maintenance Service
+                </option>
+                <option value="Emergency Roadside Assistance">
+                  Emergency Roadside Assistance
+                </option>
               </select>
+
+              {/* Custom Arrow */}
+              <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none">
+                <svg
+                  className="w-5 h-5 text-slate-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
             </div>
 
-            {/* Vehicle */}
             <div className="mb-5">
               <label className="text-sm text-gray-400">Vehicle</label>
 

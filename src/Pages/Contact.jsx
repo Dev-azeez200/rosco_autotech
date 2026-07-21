@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -55,6 +56,13 @@ ${values.message}
 
   return (
     <div className="bg-gradient-to-br from-[#0b1424] to-[#0f1f3d] text-white">
+      <Helmet>
+        <title>Contact Us | ROSCO AUTOTECH</title>
+        <meta
+          name="description"
+          content="Contact ROSCO AUTOTECH for service requests, inquiries, and support — reach out via WhatsApp or our contact form for fast assistance."
+        />
+      </Helmet>
       <section className="py-20 text-center px-6 bg-[#071633]">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
         <p className="max-w-2xl mx-auto text-gray-400">

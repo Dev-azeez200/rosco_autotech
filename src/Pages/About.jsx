@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import assets from "../assets/assets";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaScrewdriverWrench } from "react-icons/fa6";
@@ -34,6 +35,13 @@ const About = () => {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>About Us | ROSCO AUTOTECH</title>
+        <meta
+          name="description"
+          content="Learn about ROSCO AUTOTECH, our experienced technicians, and our commitment to providing reliable, high-quality automotive repair and maintenance services."
+        />
+      </Helmet>
       <section
         className="relative h-[400px] bg-cover bg-center bg-no-repeat text-white py-20 text-center px-6"
         style={{ backgroundImage: `url(${assets.About})` }}

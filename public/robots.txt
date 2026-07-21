@@ -1,0 +1,6 @@
+# ROSCO AUTOTECH Robots File
+
+User-agent: *
+Allow: /
+
+Sitemap: https://rosco-autotech.vercel.app/sitemap.xml

@@ -13,15 +13,15 @@ function App() {
   return (
     <>
       <Toaster />
-      <Routes>
-        <Route>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
           <Route path="/" element={<MainLayout child={<Home />} />} />
           <Route path="/about" element={<MainLayout child={<About />} />} />
           <Route path="/service" element={<MainLayout child={<Service />} />} />
           <Route path="/contact" element={<MainLayout child={<Contact />} />} />
-        </Route>
-        <Route path="/bookservice" element={<BookService />} />
-      </Routes>
+          <Route path="/BookService" element={<MainLayout child={<BookService />} />} />
+        </Routes>
+      </Suspense>
     </>
   );
 }

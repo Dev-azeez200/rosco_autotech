@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import assets from "../assets/assets";
 import { FaCar, FaTools, FaKey, FaMapMarkerAlt } from "react-icons/fa";
 import { MdOutlineAnalytics } from "react-icons/md";
@@ -75,6 +76,13 @@ const services = [
 const Service = () => {
   return (
     <div className="text-white">
+      <Helmet>
+        <title>Services | ROSCO AUTOTECH</title>
+        <meta
+          name="description"
+          content="Explore ROSCO AUTOTECH services: ECU programming, diagnostics, engine repair, key programming, mobile mechanic, and premium vehicle care."
+        />
+      </Helmet>
       <section
         className="relative h-[400px] bg-cover bg-center bg-no-repeat py-20 text-center px-6"
         style={{ backgroundImage: `url(${assets.service})` }}
