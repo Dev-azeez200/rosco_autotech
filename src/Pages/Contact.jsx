@@ -72,7 +72,7 @@ ${values.message}
       </section>
 
       <section className="py-16 px-6 md:px-12 lg:px-20 grid lg:grid-cols-2 gap-10">
-        <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl shadow-2xl">
+        <div className="bg-[#081A38] backdrop-blur-xl border border-white/10 p-8 rounded-3xl shadow-2xl">
           <h2 className="text-2xl font-semibold mb-6">Send a Message</h2>
 
           <form onSubmit={formik.handleSubmit} className="space-y-4">
@@ -99,7 +99,6 @@ ${values.message}
               )}
             </div>
 
-            {/* Email */}
             <div>
               <input
                 type="email"
@@ -122,7 +121,6 @@ ${values.message}
               )}
             </div>
 
-            {/* Subject */}
             <div>
               <input
                 type="text"
@@ -145,7 +143,6 @@ ${values.message}
               )}
             </div>
 
-            {/* Message */}
             <div>
               <textarea
                 rows="5"
@@ -177,13 +174,12 @@ ${values.message}
           </form>
         </div>
 
-        {/* Your contact information section remains unchanged */}
         <div className="space-y-6 flex flex-col justify-center">
           <h2 className="text-4xl text-center lg:text-left font-semibold">
             Get In Touch
           </h2>
 
-          <div className="flex items-start gap-4 bg-white/5 border border-white/10 p-5 rounded-2xl">
+          <div className="flex items-start gap-4 bg-[#0b1c3d] border border-white/10 p-5 rounded-2xl">
             <div className="bg-pryClr p-3 rounded-full">
               <FaMapMarkerAlt />
             </div>
@@ -195,7 +191,7 @@ ${values.message}
             </div>
           </div>
 
-          <div className="flex items-start gap-4 bg-white/5 border border-white/10 p-5 rounded-2xl">
+          <div className="flex items-start gap-4 bg-[#0b1c3d] border border-white/10 p-5 rounded-2xl">
             <div className="bg-pryClr p-3 rounded-full">
               <FaPhoneAlt />
             </div>
@@ -205,7 +201,7 @@ ${values.message}
             </div>
           </div>
 
-          <div className="flex items-start gap-4 bg-white/5 border border-white/10 p-5 rounded-2xl">
+          <div className="flex items-start gap-4 bg-[#0b1c3d] border border-white/10 p-5 rounded-2xl">
             <div className="bg-pryClr p-3 rounded-full">
               <FaEnvelope />
             </div>

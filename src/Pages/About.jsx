@@ -11,7 +11,7 @@ import { FaShield } from "react-icons/fa6";
 import { MdOutlineTerminal } from "react-icons/md";
 
 const Card = ({ icon, title, text }) => (
-  <div className="bg-[#111c2e] flex flex-col justify-center items-center p-6 rounded-2xl shadow-md hover:shadow-xl border border-white/10 transition duration-300 hover:border-pryClr hover:-translate-y-2">
+  <div className="bg-[#0b1c3d] flex flex-col justify-center items-center p-6 rounded-2xl shadow-md hover:shadow-xl border border-white/10 transition duration-300 hover:border-pryClr hover:-translate-y-2">
     <div className="text-pryClr text-5xl mb-4 ">{icon}</div>
     <h3 className="text-white text-[20px] font-semibold mb-2">{title}</h3>
     <p className="text-white text-center text-sm leading-relaxed">{text}</p>
@@ -103,7 +103,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="bg-[#131B2E] text-white p-6  py-16 md:px-12">
+      <section className="bg-[#071633] text-white p-6  py-16 md:px-12">
         <h2 className="text-4xl font-bold text-center mb-12">
           Our Core Philosophy
         </h2>
@@ -127,7 +127,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="bg-[#131B2E] text-white py-16 px-6 md:px-12">
+      <section className="bg-[#071633] text-white py-16 px-6 md:px-12">
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold mb-8 lg:text-center md:text-center">

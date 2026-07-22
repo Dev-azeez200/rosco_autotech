@@ -78,7 +78,6 @@ const Home = () => {
 
         <section className="bg-[#0b1c3d] text-white py-14 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            {/* Image */}
             <div className="relative group">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl border border-white/10">
                 <img
@@ -143,7 +142,7 @@ const Home = () => {
 
         <section
           id="services"
-          className="bg-[#131B2E] py-16 px-4 sm:px-6 md:px-12"
+          className="bg-[#081A38] py-16 px-4 sm:px-6 md:px-12"
         >
           <div className="text-center">
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-10">
@@ -224,7 +223,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="bg-[#131B2E] py-16 px-4 sm:px-6 md:px-12 text-white">
+        <section className="bg-[#081A38] py-16 px-4 sm:px-6 md:px-12 text-white">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
               Our Impact in Numbers

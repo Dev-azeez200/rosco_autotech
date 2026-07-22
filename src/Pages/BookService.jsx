@@ -146,7 +146,7 @@ ${result.recommendation}
       </Helmet>
       <button
         onClick={() => navigate("/")}
-        className="flex items-center gap-2 mb-6 text-gray-300 hover:text-white transition"
+        className="flex items-center gap-2 mb-6 text-gray-300 hover:text-white transition bg-pryClr py-3 px-3  hover:opacity-90 rounded-lg cursor-pointer"
       >
         <FaArrowLeft />
         Back to Home
@@ -155,7 +155,7 @@ ${result.recommendation}
       <div className="flex items-center justify-center">
         <form
           onSubmit={formik.handleSubmit}
-          className="w-full max-w-4xl bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-8 grid md:grid-cols-2 gap-8"
+          className="w-full max-w-4xl bg-[#081A38] backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-8 grid md:grid-cols-2 gap-8"
         >
           <div>
             <h2 className="text-xl font-semibold mb-6">Service Details</h2>
@@ -384,7 +384,7 @@ ${result.recommendation}
 
             <button
               type="submit"
-              className="w-full bg-pryClr hover:bg-gray-500 cursor-pointer transition py-3 rounded-lg font-semibold text-lg shadow-lg"
+              className="w-full bg-pryClr  hover:opacity-90  mt-4 cursor-pointer transition py-3 rounded-lg font-semibold text-lg shadow-lg"
             >
               Confirm Booking
             </button>

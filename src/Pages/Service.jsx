@@ -18,7 +18,7 @@ import {
 import { SprayCan, Palette, Sparkles, Armchair } from "lucide-react";
 
 const Card = ({ number, icon, title, text }) => (
-  <div className="relative bg-[#111c2e] p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+  <div className="relative bg-[#0b1c3d] p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
     <span className="absolute top-4 right-6 text-white text-5xl font-bold opacity-20 ">
       {number}
     </span>
@@ -102,7 +102,7 @@ const Service = () => {
         </div>
       </section>
 
-      <section className="bg-[#071633] py-20 px-6 md:px-10 lg:px-16">
+      <section className="bg-[#0b1c3d] py-20 px-6 md:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <h2 className="text-[25px] md:text-4xl lg:text-4xl font-bold text-white mb-4">
@@ -120,7 +120,7 @@ const Service = () => {
             {services.map((item, index) => (
               <div
                 key={index}
-                className="group bg-[#0F1A2F] rounded-xl p-6 border border-white/5 hover:border-pryClr transition-all duration-300 hover:-translate-y-2  hover:shadow-pryClr/10 text-center"
+                className="group bg-[#071633] rounded-xl p-6 border border-white/5 hover:border-pryClr transition-all duration-300 hover:-translate-y-2  hover:shadow-pryClr/10 text-center"
               >
                 <div className="w-14 h-14 rounded-xl bg-pryClr flex items-center justify-center text-white text-2xl mx-auto mb-5">
                   {item.icon}
@@ -141,7 +141,7 @@ const Service = () => {
         </div>
       </section>
 
-      <section className="grid bg-[#0b1424] py-16 px-6 md:px-12 lg:px-16 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="grid bg-[#071633] py-16 px-6 md:px-12 lg:px-16 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <Card
           number="01"
           icon={<MdOutlineAnalytics size={28} />}
@@ -191,7 +191,7 @@ const Service = () => {
           <div className="absolute top-0 left-0 w-full h-full "></div>
 
           <img
-            src={assets.service} // Wrapped sports car image
+            src={assets.service}
             alt=""
             className="absolute inset-0 w-full h-full object-cover opacity-20"
           />
@@ -315,11 +315,11 @@ const Service = () => {
         </div>
       </section>
 
-      <section className=" bg-[#131B2E] py-20 px-6 md:px-12 lg:px-16 text-center">
+      <section className=" bg-[#081A38]  py-20 px-6 md:px-12 lg:px-16 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-14">How It Works</h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-1 gap-8">
-          <div className="relative bg-[#0b1424] p-8 rounded-2xl shadow-lg hover:-translate-y-2 transition duration-300">
+          <div className="relative bg-[#0b1c3d] p-8 rounded-2xl shadow-lg hover:-translate-y-2 transition duration-300">
             <div className="w-14 h-14 mx-auto mb-5 flex items-center justify-center rounded-full bg-pryClr text-white text-lg font-bold">
               01
             </div>
@@ -331,7 +331,7 @@ const Service = () => {
             </p>
           </div>
 
-          <div className="relative bg-[#0b1424] p-8 rounded-2xl shadow-lg hover:-translate-y-2 transition duration-300">
+          <div className="relative bg-[#0b1c3d] p-8 rounded-2xl shadow-lg hover:-translate-y-2 transition duration-300">
             <div className="w-14 h-14 mx-auto mb-5 flex items-center justify-center rounded-full bg-pryClr text-white text-lg font-bold">
               02
             </div>
@@ -343,7 +343,7 @@ const Service = () => {
             </p>
           </div>
 
-          <div className="relative bg-[#0b1424]  p-8 rounded-2xl shadow-lg hover:-translate-y-2 transition duration-300">
+          <div className="relative bg-[#0b1c3d]  p-8 rounded-2xl shadow-lg hover:-translate-y-2 transition duration-300">
             <div className="w-14 h-14 mx-auto mb-5 flex items-center justify-center rounded-full bg-pryClr text-white text-lg font-bold">
               03
             </div>
